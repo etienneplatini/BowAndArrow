@@ -1,11 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{DADFDC31-BC2E-A7DE-8CF7-3E15428F3C22}") = "Bowman defense", "Assembly-CSharp-firstpass.csproj", "{57E9DBB0-1F26-C504-61BE-831CBED9599B}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowman defense", "Assembly-CSharp-firstpass.csproj", "{57E9DBB0-1F26-C504-61BE-831CBED9599B}"
 EndProject
-Project("{DADFDC31-BC2E-A7DE-8CF7-3E15428F3C22}") = "Bowman defense", "Assembly-CSharp.csproj", "{B1088DE4-52D9-4C2C-054C-5B8C6FDB27A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowman defense", "Assembly-CSharp.csproj", "{B1088DE4-52D9-4C2C-054C-5B8C6FDB27A7}"
 EndProject
-Project("{DADFDC31-BC2E-A7DE-8CF7-3E15428F3C22}") = "Bowman defense", "Assembly-CSharp-Editor.csproj", "{ACE8D454-525C-5ADE-109E-689B7CEAB96A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowman defense", "Assembly-CSharp-Editor.csproj", "{ACE8D454-525C-5ADE-109E-689B7CEAB96A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
