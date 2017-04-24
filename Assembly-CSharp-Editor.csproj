@@ -47,24 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Density\Hill.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Density\InverseHill.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Density\Island.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Surface\EnableStatic.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Textures\DensityNormal.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Textures\FaceNormal.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Textures\FractalAndDensityNormal.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Vegetation\Plants.cs" />
-     <Compile Include="Assets\TinyTerrain\Editor\Vegetation\Vegetation.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\Editor\Welcome.cs" />
-     <None Include="Assets\UK Terraced Houses FREE\Readme.txt" />
-     <None Include="Assets\TinyTerrain\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\bowandarrow\Documentation\readme.txt" />
      <None Include="Assets\bowandarrow\Fonts\kingthingsEULA.txt" />
-     <None Include="Assets\TinyTerrain\Standard Assets\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\TinyTerrain\README.txt" />
-     <None Include="Assets\TinyTerrain\Materials\TerrainSurface.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -113,9 +98,6 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="TinyTerrain">
- <HintPath>A:/documents/__perso/unity/Bowman defense/Assets/TinyTerrain/Editor/TinyTerrain.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -127,8 +109,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{57E9DBB0-1F26-C504-61BE-831CBED9599B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{B1088DE4-52D9-4C2C-054C-5B8C6FDB27A7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>

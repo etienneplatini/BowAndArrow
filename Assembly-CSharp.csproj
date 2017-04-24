@@ -46,30 +46,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Orc Warrior\Scripts\MouseController.cs" />
-     <Compile Include="Assets\TinyTerrain\Scripts\Rotate.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\Displace.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\GerstnerDisplace.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\MeshContainer.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\PlanarReflection.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\SpecularLighting.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\Water.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\WaterBase.cs" />
-     <Compile Include="Assets\TinyTerrain\Standard Assets\Water\Scripts\WaterTile.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\RisingText.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\bowAndArrow.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\camMovement.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\cloudMove.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\rotateArrow.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\targetMove.cs" />
-     <None Include="Assets\UK Terraced Houses FREE\Readme.txt" />
-     <None Include="Assets\TinyTerrain\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\bowandarrow\Documentation\readme.txt" />
      <None Include="Assets\bowandarrow\Fonts\kingthingsEULA.txt" />
-     <None Include="Assets\TinyTerrain\Standard Assets\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\TinyTerrain\README.txt" />
-     <None Include="Assets\TinyTerrain\Materials\TerrainSurface.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -88,10 +72,6 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{57E9DBB0-1F26-C504-61BE-831CBED9599B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
