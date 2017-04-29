@@ -26,6 +26,7 @@ public class bowAndArrow : MonoBehaviour {
 	public AudioClip stringPull;
 	public AudioClip stringRelease;
 	public AudioClip arrowSwoosh;
+	public AudioClip musicMenu;
 
 	// has sound already be played
 	bool stringPullSoundPlayed;
@@ -415,7 +416,7 @@ public class bowAndArrow : MonoBehaviour {
 	public void showHighscore() {
 		menuCanvas.enabled = false;
 		highscoreCanvas.enabled = true;
-		actualHighscoreText.text = "Actual Hiscore: " + PlayerPrefs.GetInt ("Score") + " points";
+		actualHighscoreText.text = PlayerPrefs.GetInt ("Score") + "pts";
 		newHighscoreText.text = "Your Score: " + score + " points";
 		if (score > PlayerPrefs.GetInt("Score"))
 			newHighText.enabled = true;
@@ -474,6 +475,8 @@ public class bowAndArrow : MonoBehaviour {
 	//
 
 	public void startGame() {
+		GetComponent<AudioSource>().PlayOneShot(musicMenu);
+
 		menuCanvas.enabled = false;
 		highscoreCanvas.enabled = false;
 		instructionsCanvas.enabled = false;
@@ -483,6 +486,7 @@ public class bowAndArrow : MonoBehaviour {
 
 	public void showMenu() {
 		menuCanvas.enabled = true;
+
 		gameState = GameStates.menu;
 		resetGame ();
 	}

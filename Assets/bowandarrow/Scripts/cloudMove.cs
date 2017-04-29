@@ -20,8 +20,8 @@ public class cloudMove : MonoBehaviour {
 		// move it with given speed
 		position.x += speed;
 		// wrap around, if clouds leave screen to the right
-		if (position.x > 12f)
-			position.x = -12f;
+		if (position.x > 45f)
+			position.x = -45f;
 		// set the vector
 		transform.position = position;
 	}
