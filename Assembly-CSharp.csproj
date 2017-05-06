@@ -52,6 +52,7 @@
      <Compile Include="Assets\bowandarrow\Scripts\cloudMove.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\rotateArrow.cs" />
      <Compile Include="Assets\bowandarrow\Scripts\targetMove.cs" />
+     <Compile Include="Assets\leagues.cs" />
      <None Include="Assets\bowandarrow\Documentation\readme.txt" />
      <None Include="Assets\bowandarrow\Fonts\kingthingsEULA.txt" />
  <Reference Include="UnityEngine.UI">

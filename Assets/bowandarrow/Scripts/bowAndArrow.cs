@@ -21,6 +21,7 @@ public class bowAndArrow : MonoBehaviour {
 	public GameObject gameManager;	
 	public GameObject risingText;
 	public GameObject target;
+	public GameObject league;
 
 	// Sound effects
 	public AudioClip stringPull;
@@ -93,7 +94,7 @@ public class bowAndArrow : MonoBehaviour {
 	//
 
 	void resetGame() {
-		arrows = 10;
+		arrows = 1;
 		score = 0;
 		nbHits = 0;
 		// be sure that there is only one arrow in the game
@@ -104,6 +105,7 @@ public class bowAndArrow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Debug.Log ("Start !");
 		// set the UI screens
 		menuCanvas.enabled = true;
 		instructionsCanvas.enabled = false;
@@ -140,6 +142,10 @@ public class bowAndArrow : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (PlayerPrefs.GetInt ("Score") > 0) {
+			Debug.Log ("hisghscore existe ! ");
+		}
 		// check the game states
 		switch (gameState) {
 		case GameStates.menu:
@@ -210,6 +216,7 @@ public class bowAndArrow : MonoBehaviour {
 	//
 	
 	public void initScore() {
+		Debug.Log("initScore");
 		if (!PlayerPrefs.HasKey ("Score")) {
 			PlayerPrefs.SetInt ("Score", 0);
 			PlayerPrefs.SetInt ("NbHits", 0);
@@ -270,6 +277,7 @@ public class bowAndArrow : MonoBehaviour {
 			arrowPrepared = false;
 			// subtract one arrow
 			arrows --;
+
 		}
 		else {
 			// no arrow is left,
@@ -417,11 +425,10 @@ public class bowAndArrow : MonoBehaviour {
 		menuCanvas.enabled = false;
 		highscoreCanvas.enabled = true;
 		actualHighscoreText.text = PlayerPrefs.GetInt ("Score") + "pts";
-		newHighscoreText.text = "Your Score: " + score + " points";
-		if (score > PlayerPrefs.GetInt("Score"))
-			newHighText.enabled = true;
-		else
-			newHighText.enabled = false;
+
+		
+		Debug.Log(score + " current score fonction sHS" );
+		Debug.Log(PlayerPrefs.GetInt("Score") + " current highscore fonction sHS");
 	}
 
 
@@ -438,8 +445,12 @@ public class bowAndArrow : MonoBehaviour {
 		highscoreCanvas.enabled = false;
 		gameCanvas.enabled = false;
 		gameOverCanvas.enabled = false;
+		Debug.Log(score + " current score fonction hHS" );
+		Debug.Log(PlayerPrefs.GetInt("Score") + " current highscore fonction hHS");
 		if (score > PlayerPrefs.GetInt ("Score")) {
-			PlayerPrefs.SetInt("Score",score);
+			Debug.Log("score > PlayerPrefs.GetInt (Score)" );
+			PlayerPrefs.SetInt ("Score", score);
+		
 		}
 		resetGame();
 	}
@@ -449,13 +460,17 @@ public class bowAndArrow : MonoBehaviour {
 	//
 	// public void checkHighScore()
 	//
-	// this method is called after the game over screen
+	// this method is called after the game over screen 
 	// it checks for a new high score and displays the 
 	// highscore screen, if neccessary - else the menu screen
 
 	public void checkHighScore() {
 		gameOverCanvas.enabled = false;
+		Debug.Log(score + " current score fonction cHS" );
+		Debug.Log(PlayerPrefs.GetInt("Score") + " current highscore fonction cHS");
 		if (score > PlayerPrefs.GetInt ("Score")) {
+			Debug.Log("score > PlayerPrefs.GetInt (Score)" );
+			PlayerPrefs.SetInt ("Score", score);
 			showHighscore();
 		}
 		else {
@@ -475,6 +490,7 @@ public class bowAndArrow : MonoBehaviour {
 	//
 
 	public void startGame() {
+		GetComponent<AudioSource>().PlayOneShot(arrowSwoosh);
 		GetComponent<AudioSource>().PlayOneShot(musicMenu);
 
 		menuCanvas.enabled = false;
@@ -497,6 +513,10 @@ public class bowAndArrow : MonoBehaviour {
 		string facebookshare = "https://www.facebook.com/sharer/sharer.php?u=" + System.Uri.EscapeUriString(storeUrl);
 		Application.OpenURL(facebookshare);		
  
+	}
+
+	public void testLeagues() {
+		GetComponent<AudioSource>().PlayOneShot(musicMenu);
 	}
 
 
